@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<TITLE>Work In Progress</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		h1
+			{
+				text-align: center;
+				text-shadow: 3px 2px pink;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				color: grey;
+			}
+		img 
+			{
+  				display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+			}
+		html 
+			{ 
+  				background: url(5.jpg) no-repeat center fixed; 
+  				background-size: cover;
+			}
+	</style>
+</head>
+<body>
+	<base href="C:\Users\tejus\OneDrive\Desktop\WT\">
+	<header>
+		<h1>Virtual Tour<sup>2D</sup></h1>
+	</header>	
+	<section>
+		<img src="pics\6.jpg" alt="Home" usemap="#home" >
+		<map name="home">
+			<area shape="rect" coords="890,203,1090,629" alt="Door" href="Back.html">
+			<area shape="rect" coords="98,436,215,550" alt="Left" href="Start.html">
+		</map>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/imageMapResizer.min.js"></script>
+	<script type="text/javascript">
+
+		$('home').imageMapResize();
+
+	</script>
+</body>
+</html>
